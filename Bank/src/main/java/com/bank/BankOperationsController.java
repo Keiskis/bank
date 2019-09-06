@@ -60,5 +60,4 @@ public class BankOperationsController {
 	public List<BankOperationTable> getStatementByUserById(@PathVariable(value = "id") Long userId) {
 		return operationsRepository.findAllByUserId(userId);
 	}
-
 }
