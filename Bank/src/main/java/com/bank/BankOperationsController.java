@@ -55,7 +55,6 @@ public class BankOperationsController {
 		return operationsRepository.findAllByIdAndUserId(id, userId);
 	}
 
-	
 	// Get User statement by userID
 	@GetMapping("/statement/{id}")
 	public List<BankOperationTable> getStatementByUserById(@PathVariable(value = "id") Long userId) {
